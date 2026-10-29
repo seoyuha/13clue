@@ -1,32 +1,18 @@
 {
-  "name": "13clues-tablet-kit",
+  "name": "13clues-eco-detectives",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node -e \"require('fs').copyFileSync('index.source.html', 'index.html')\" && vite",
-    "build": "node scripts/buildSingle.cjs",
+    "start": "node server.cjs",
     "server": "node server.cjs",
-    "preview": "vite preview",
-    "verify": "tsx scripts/verifySetup.ts",
-    "start": "node server.cjs"
+    "sim": "node test/sim.cjs"
   },
   "dependencies": {
-    "mqtt": "^5.16.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
     "ws": "^8.18.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "tsx": "^4.19.2",
-    "typescript": "~5.6.3",
-    "vite": "^6.0.3",
-    "vite-plugin-singlefile": "^2.3.4"
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "description": "13 Clues – Eco Detectives: 6학년 영어 12단원 추리 게임"
 }
