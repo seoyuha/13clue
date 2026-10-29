@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: 13clue
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: node server.cjs
+    healthCheckPath: /api/health
